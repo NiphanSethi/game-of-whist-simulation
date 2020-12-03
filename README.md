@@ -14,6 +14,16 @@
 
 ## Creating Models
 
+To ensure that the implementation of the game elements are extensible in terms of creating new NPCs and executing different game configurations, a static domain model and a static design class model was constructed:
+
+Click [here](https://github.com/NiphanSethi/A_Game_of_Whist/blob/master/Documentation/Static_Domain_Diagram.jpg) to view the static domain model
+
+Click [here](https://github.com/NiphanSethi/A_Game_of_Whist/blob/master/Documentation/Static_Design_Diagram.jpg) to view the static design class model 
+
+<em>Note: All models are constructed using UML notation</em>
+
+Several software design principles and patterns were considered when creating these models (this is described below)
+
 ## Explanation of Design Patterns and Principles Used
 
 ## Application Demo
