@@ -32,14 +32,16 @@ In order to simulate different game configurations with a range of NPC types, se
 
 To ensure that the implementation of the game elements are extensible in terms of creating new NPCs and executing different game configurations, a static domain model and a static design class model was constructed:
 
-Click [here](https://github.com/NiphanSethi/A_Game_of_Whist/blob/master/Documentation/Static_Domain_Diagram.jpg) to view the static domain class model
+Click [here](https://github.com/NiphanSethi/A_Game_of_Whist/blob/master/documentation/Static_Domain_Diagram.jpg) to view the static domain class model
 
-Click [here](https://github.com/NiphanSethi/A_Game_of_Whist/blob/master/Documentation/Static_Design_Diagram.jpg) to view the static design class model 
+Click [here](https://github.com/NiphanSethi/A_Game_of_Whist/blob/master/documentation/Static_Design_Diagram.jpg) to view the static design class model 
 
 <em>Note: All models are constructed using UML notation</em>
 
 Several software design principles and patterns were considered when creating these models (this is described below).
 
 ## Explanation of Design Patterns and Principles Used
+
+Click [here](https://github.com/NiphanSethi/A_Game_of_Whist/blob/master/documentation/Design_Patterns_and_Principles_Explanation.pdf) to view a report explaining the software design patterns and principles used
 
 ## Application Demo
