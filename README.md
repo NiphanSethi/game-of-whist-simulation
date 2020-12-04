@@ -26,7 +26,7 @@ This project aims to simulate a card game called Whist. A GUI based on the “JG
 
 ## The Properties Files
 
-In order to simulate different game configurations with a range of NPC types, several properties files were created. Each has parameters indicating the number of players, the number of starting cards per player, the winning score, whether or not the rules are enforced, if NPC cards are face up or face down, and the types of players. Since the random NPC does not take into consideration the rules of the game, we cannot enforce the rules otherwise an exception will be thrown and the game will force quit. There are three game configurations provided: “original.properties”, “legal.properties”, and “smart.properties”. These can be changed on line 78 of “./src/Whist.java”. The default game configuration run is “smart.properties”.
+In order to simulate different game configurations with a range of NPC types, several properties files were created. Each has parameters indicating the number of players, the number of starting cards per player, the winning score, whether or not the rules are enforced, if NPC cards are face up or face down, and the types of players. Since the random NPC does not take into consideration the rules of the game, we cannot enforce the rules otherwise an exception will be thrown and the game will force quit. There are three game configurations provided: “original.properties”, “legal.properties”, and “smart.properties”. These can be changed on line 78 of “./src/Whist.java”. The default game configuration is “smart.properties”.
 
 ## Creating Models
 
@@ -38,7 +38,7 @@ Click [here](https://github.com/NiphanSethi/A_Game_of_Whist/blob/master/Document
 
 <em>Note: All models are constructed using UML notation</em>
 
-Several software design principles and patterns were considered when creating these models (this is described below)
+Several software design principles and patterns were considered when creating these models (this is described below).
 
 ## Explanation of Design Patterns and Principles Used
 
