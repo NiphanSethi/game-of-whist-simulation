@@ -1,7 +1,5 @@
 # A Game of Whist
 
-This project has been adapted from an assignment given at The University of Melbourne
-
 The entry point to the application is “./src/Whist.java”
 
 This project aims to simulate a card game called Whist. A GUI based on the “JGameGrid.jar” library has been created. Software design patterns and principles have been applied to allow for different types of NPCs: random, legal, and smart. A random NPC plays random cards from their playing hand, and does not account for the rules of the game. A legal NPC accounts for the rules of the game when making their move. A smart NPC uses relevant information from the round to select a desirable legal card from its playing hand. Its performance is better than that of the random and legal NPC. The purpose of designing an extensible system is to allow for interchangeable game configurations and future developments on the types of NPCs. In order to plan for this, two models were created (a static domain class model and a static design class model).
@@ -15,6 +13,16 @@ This project aims to simulate a card game called Whist. A GUI based on the “JG
 5. [Application Demo](#application-demo)
 
 ## Game Instructions
+
+* A random player along with a trump suit is selected to begin the game.
+* A round consists of every player putting a card from their playing hand down onto the table.
+* The objective of each round is to play the highest card of the starting card’s suit. 
+* A player must play a card with the same suit as the starting card’s suit if they have one. Otherwise, they are free to play a card of any other suit (including the trump suit). 
+* Once all players have completed their turn, the player that put the highest card of the starting card’s suit wins the round and receives a point. This player then starts the next round.
+  * Note: If a player puts down a card which is a trump suit and all other players put a card of the starting card’s suit/any other suit, then the player that put the trump suit card wins the round.
+  * If multiple players play a card of the trump suit, then the player that put the highest card of the trump suit wins the round. 
+* Once a player obtains the winning score (specified in the properties file), then the game ends.
+* If the players no longer have any cards left in hand at the end of a round and no player has won the game, then the cards are re-dealt and the trump suit is randomly selected again.
 
 ## The Properties Files
 
