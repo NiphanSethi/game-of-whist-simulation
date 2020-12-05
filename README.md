@@ -45,3 +45,5 @@ Several software design principles and patterns were considered when creating th
 Click [here](https://github.com/NiphanSethi/A_Game_of_Whist/blob/master/documentation/Design_Patterns_and_Principles_Explanation.pdf) to view a report explaining the software design patterns and principles used
 
 ## Application Demo
+
+Click [here](https://www.youtube.com/watch?v=d9Ow-Uva2N4&feature=youtu.be) to view a gameplay demo. The "smart.properties" game configuration is selected for the demo.
