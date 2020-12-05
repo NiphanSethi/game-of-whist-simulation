@@ -7,10 +7,11 @@ This project aims to simulate a card game called Whist. A GUI based on the “JG
 ## Table of Contents
 
 1. [Game Instructions](#game-instructions)
-2. [The Properties Files](#the-properties-files)
-3. [Creating Models](#creating-models)
-4. [Explanation of Design Patterns and Principles Used](#explanation-of-design-patterns-and-principles-used)
-5. [Application Demo](#application-demo)
+2. [Getting Started](#getting-started)
+3. [The Properties Files](#the-properties-files)
+4. [Creating Models](#creating-models)
+5. [Explanation of Design Patterns and Principles Used](#explanation-of-design-patterns-and-principles-used)
+6. [Application Demo](#application-demo)
 
 ## Game Instructions
 
@@ -23,6 +24,13 @@ This project aims to simulate a card game called Whist. A GUI based on the “JG
   * If multiple players play a card of the trump suit, then the player that put the highest card of the trump suit wins the round. 
 * Once a player obtains the winning score (specified in the properties file), then the game ends.
 * If the players no longer have any cards left in hand at the end of a round and no player has won the game, then the cards are re-dealt and the trump suit is randomly selected again.
+
+## Getting Started
+
+* Create a new project in the IDE of your choice
+* Copy over "./src", "./lib", and the ".properties" files
+* Add "JGameGrid.jar" from "./lib" to the project structure as an additional library
+* Build and then run "./src/Whist.java"
 
 ## The Properties Files
 
