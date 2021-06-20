@@ -24,8 +24,8 @@ jobs:
       shell: pwsh
       run: |
         Write-Host "$env:SECRET_TOO"
-        Write-Host "test_environment=dev" >> $GITHUB_ENV
+        Write-Output "::set-env name=TEST_ENVIRONMENT::dev"
     - name: Use value
       shell: pwsh
       run: |
-        Write-Host "${{ env.test_environment }}"
+        Write-Host "$env:TEST_ENVIRONMENT"
