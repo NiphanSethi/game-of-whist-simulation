@@ -20,4 +20,4 @@ jobs:
     # Runs a single command using the runners shell
     - name: Send greeting
       shell: pwsh
-      run: Write-Host "Hello ${{ github.event.inputs.name }}"
+      run: Write-Host "Hello World, This is Niphan!"
