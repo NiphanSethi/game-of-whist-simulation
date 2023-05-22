@@ -1,6 +1,6 @@
 # A Game of Whist
 
-The entry point to the application is “./src/Whist.java”
+The entry point to the application is “src/Whist.java”
 
 This project aims to simulate a card game called Whist. A GUI based on the “JGameGrid.jar” library has been created. Software design patterns and principles have been applied to allow for different types of NPCs: random, legal, and smart. A random NPC plays random cards from their playing hand, and does not account for the rules of the game. A legal NPC accounts for the rules of the game when making their move. A smart NPC uses relevant information from the round to select a desirable legal card from its playing hand. Its performance is better than that of the random and legal NPC. The purpose of designing an extensible system is to allow for interchangeable game configurations and future developments on the types of NPCs. In order to plan for this, two models were created (a static domain class model and a static design class model).
 
@@ -9,7 +9,7 @@ This project aims to simulate a card game called Whist. A GUI based on the “JG
 1. [Game Instructions](#game-instructions)
 2. [Getting Started](#getting-started)
 3. [The Properties Files](#the-properties-files)
-4. [Creating Models](#creating-models)
+4. [Software Architecture Diagrams](#software-architecture-diagrams)
 5. [Explanation of Design Patterns and Principles Used](#explanation-of-design-patterns-and-principles-used)
 6. [Application Demo](#application-demo)
 
@@ -28,15 +28,15 @@ This project aims to simulate a card game called Whist. A GUI based on the “JG
 ## Getting Started
 
 * Create a new project in the IDE of your choice
-* Copy over "./src", "./lib", and the ".properties" files
-* Add "JGameGrid.jar" from "./lib" to the project structure as an additional library
-* Build and then run "./src/Whist.java"
+* Copy over the "src" and "lib" directories as well as the ".properties" files
+* Add "JGameGrid.jar" from the "lib" directory to the project structure as an additional library
+* Build and then run "src/Whist.java"
 
 ## The Properties Files
 
-In order to simulate different game configurations with a range of NPC types, several properties files were created. Each has parameters indicating the number of players, the number of starting cards per player, the winning score, whether or not the rules are enforced, if NPC cards are face up or face down, and the types of players. Since the random NPC does not take into consideration the rules of the game, we cannot enforce the rules otherwise an exception will be thrown and the game will force quit. There are three game configurations provided: “original.properties”, “legal.properties”, and “smart.properties”. These can be changed on line 78 of “./src/Whist.java”. The default game configuration is “smart.properties”.
+In order to simulate different game configurations with a range of NPC types, several properties files were created. Each has parameters indicating the number of players, the number of starting cards per player, the winning score, whether or not the rules are enforced, if NPC cards are face up or face down, and the types of players. Since the random NPC does not take into consideration the rules of the game, we cannot enforce the rules otherwise an exception will be thrown and the game will force quit. There are three game configurations provided: “original.properties”, “legal.properties”, and “smart.properties”. These can be changed on line 78 of “src/Whist.java”. The default game configuration is “smart.properties”.
 
-## Creating Models
+## Software Architecture Diagrams
 
 To ensure that the implementation of the game elements are extensible in terms of creating new NPCs and executing different game configurations, a static domain model and a static design class model was constructed:
 
